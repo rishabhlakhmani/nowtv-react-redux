@@ -6,7 +6,6 @@ export const fetchMessages = createAsyncThunk(
   async () => {
     // const response = await axios.get(`${apiUrl}/messages/all`);
     // return response.data;
-    console.log("fedfdef")
     return getMessages()
   }
 )

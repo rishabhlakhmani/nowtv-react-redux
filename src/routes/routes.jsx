@@ -26,6 +26,8 @@ export default function AppRoutes() {
           </React.Suspense>
         }
       />
+
+      <Route path="*" element={<h2>Page not Found</h2>} />
     </Routes>
   );
 }

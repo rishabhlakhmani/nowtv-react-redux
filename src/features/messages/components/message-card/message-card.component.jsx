@@ -11,22 +11,22 @@ export default function MessageCard({ message }) {
   const navigateToMembersMessages = membersHooks.useNavigateToMembersMessages(message.userId);
 
   return (
-    <Card className="card-container">
+    <Card className="card-container" data-testid="message-card">
       <Card.Img
         variant="top"
-        src={member.avatar || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png'}
+        src={member?.avatar || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png'}
         alt="Image"
       />
       <Card.Body>
         <Card.Title onClick={navigateToMembersMessages}>
-          {member.firstName} {member.lastName}
+          {member?.firstName} {member?.lastName}
         </Card.Title>
 
         {/* CSS Tooltip */}
 
         <div className="message">
           <Card.Text>{message.message}</Card.Text>
-          <span className="css-tooltip custom-tooltip">{member.email}</span>
+          <span className="css-tooltip custom-tooltip">{member?.email}</span>
         </div>
 
          {/* JS Tooltip */}

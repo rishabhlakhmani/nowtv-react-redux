@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Messages should render the component 1`] = `
+<div>
+  <div
+    class="mx-auto d-flex justify-content-center flex-wrap page-container container"
+  >
+    <header
+      class=""
+    >
+      <h2>
+        Messages List
+      </h2>
+    </header>
+    <div
+      class="w-100"
+    >
+      <main>
+        <div>
+           No Messages available. 
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+`;
