@@ -1,6 +1,6 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import MessagesList from './messages-list.component';
 import { renderWithProviders } from '../../../../shared/utils/test.utils';
 
